@@ -1,0 +1,114 @@
+@import 'components/app-bar.css';
+@import 'components/hero-element.css';
+@import 'components/restaurant-item.css';
+@import 'components/restaurant-list.css';
+@import 'pages/detail.css';
+@import 'pages/favorite.css';
+@import 'pages/home.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #DB0000;
+  color: white;
+  padding: 1em;
+}
+
+#hamburgerButton {
+  display: inline-block;
+  font-size: 24px;
+  padding: 10px 12px;
+  background: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+}
+
+#navigationDrawer {
+  width: 250px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  background-color: #333;
+  z-index: 9999;
+  color: white;
+  overflow-y: auto;
+  transition: left 0.3s;
+  display: block;
+}
+
+#navigationDrawer.open {
+  left: 0;
+}
+
+.drawer ul {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer li {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 1em;
+  border-bottom: 1px solid #444;
+}
+
+.drawer a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  background-color: #DB0000;
+  color: white;
+  padding: 1em;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}

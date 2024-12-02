@@ -1,0 +1,110 @@
+.restaurant {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+  padding: 32px;
+}
+
+.restaurant__poster {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.restaurant__info h4 {
+  margin: 8px 0;
+}
+
+.restaurant__description {
+  margin-top: 16px;
+}
+
+.restaurant__menus {
+  margin-top: 32px;
+}
+
+.restaurant__menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.restaurant__reviews {
+  margin-top: 32px;
+}
+
+.review {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.detail-review {
+  display: grid;
+}
+
+.detail-review-item {
+  color: var(--secondary-color);
+}
+
+.review__name {
+  font-weight: 500;
+}
+
+.review__date {
+  color: #666;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.form-review input[type="text"], 
+.form-review button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form-review button {
+  background-color: #db0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-review button:hover {
+  background-color: #850303;
+}
+
+.form-review .mb-3 {
+  margin-bottom: 1rem;
+}
+
+.form-review {
+  max-width: 400px;
+  margin: auto;
+}
+
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

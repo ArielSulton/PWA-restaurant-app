@@ -1,0 +1,10 @@
+.content {
+  padding: 32px;
+}
+
+.content__heading {
+  font-weight: normal;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
